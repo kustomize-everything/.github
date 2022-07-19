@@ -1,5 +1,3 @@
-# Kustomize Everything!
-
 ## Overview
 
 This org exists to provide easy-to-use GitOps deployment tools for repositories containing multiple deploy environments. This is meant to be accomplished via the techniques of promoting built container image shas from development repos and using "rendered YAML branches" for GitOps deployment.
