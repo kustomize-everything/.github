@@ -4,6 +4,12 @@ This org exists to provide easy-to-use [Kustomize-based](https://kustomize.io/) 
 
 To get started, look at the [guestbook-deploy](https://github.com/kustomize-everything/guestbook-deploy) repository which deploys the [guestbook](https://github.com/kustomize-everything/guestbook) app.
 
+### Github Actions
+
+- [action-env-build-and-deploy](https://github.com/kustomize-everything/action-env-build-and-deploy)
+- [action-promote](https://github.com/kustomize-everything/action-promote)
+- [action-kustomize](https://github.com/kustomize-everything/action-kustomize)
+
 ## What are "rendered YAML branches"?
 
 The technique of using "rendered YAML branches" removes the responsibility of config templating from your deployment tool and gives it to the CI/CD pipeline. For example, the [action-env-build-and-deploy GitHub Action](https://github.com/kustomize-everything/guestbook-deploy/blob/main/.github/workflows/render-manifests.yml) automates the config management templating (e.g. `kustomize build`) such that fully rendered Kubernetes manifests are outputted to an environment specific branch (e.g. `env/stage`, `env/prod`). The deployment tool is then configured to deploy the manifests from the **environment branch**, as opposed to a directory in the `main` branch.
