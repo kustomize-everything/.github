@@ -1,6 +1,6 @@
 ## Overview
 
-This org exists to provide easy-to-use [Kustomize-based](https://kustomize.io/) GitOps deployment tools for repositories containing multiple deploy environments. This is meant to be accomplished via the techniques of promoting built container image shas from development repos and using "rendered YAML branches" for GitOps deployment.
+This org exists to provide easy-to-use [Kustomize-based](https://kustomize.io/) GitOps deployment tools for repositories containing multiple deploy environments. This is meant to be accomplished via the techniques of promoting built container image shas from development repos and using "rendered YAML branches" for GitOps deployment. Other FOSS tools that enable a similar workflow are [Bookkeeper](https://bookkeeper.akuity.io/) for managing rendered YAML branches and [Kargo](https://kargo.akuity.io/) for managing promotions. Both tools are developed by [Akuity](https://akuity.io/), who provides managed [ArgoCD]([https://](https://argoproj.github.io/cd/) as a service.
 
 To get started, look at the [guestbook-deploy](https://github.com/kustomize-everything/guestbook-deploy) repository which deploys the [guestbook](https://github.com/kustomize-everything/guestbook) app.
 
